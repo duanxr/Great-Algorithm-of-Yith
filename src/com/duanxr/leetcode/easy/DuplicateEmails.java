@@ -1,4 +1,4 @@
-package easy;
+package com.duanxr.leetcode.easy;
 
 /**
  * @author Duanran 2019/1/17 0017
