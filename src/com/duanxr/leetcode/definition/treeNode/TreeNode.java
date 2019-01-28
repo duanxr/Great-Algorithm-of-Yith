@@ -1,4 +1,4 @@
-package com.duanxr.leetcode.defined;
+package com.duanxr.leetcode.definition.treeNode;
 
 /**
  * @author Duanran 2019/1/18 0018

@@ -1,6 +1,6 @@
 package com.duanxr.leetcode.easy;
 
-import com.duanxr.leetcode.defined.quadTree.Node;
+import com.duanxr.leetcode.definition.quadTree.Node;
 
 /**
  * @author Duanran 2019/1/22 0022

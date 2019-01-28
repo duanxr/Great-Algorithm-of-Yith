@@ -1,6 +1,6 @@
 package com.duanxr.leetcode.easy;
 
-import com.duanxr.leetcode.defined.TreeNode;
+import com.duanxr.leetcode.definition.treeNode.TreeNode;
 
 /**
  * @author Duanran 2019/1/18 0018

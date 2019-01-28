@@ -1,4 +1,4 @@
-package com.duanxr.leetcode.defined.quadTree;
+package com.duanxr.leetcode.definition.quadTree;
 
 /**
  * @author Duanran 2019/1/22 0022
