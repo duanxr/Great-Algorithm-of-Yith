@@ -1,5 +1,7 @@
 package com.duanxr.leetcode.easy;
 
+import com.duanxr.leetcode.define.guessGame.GuessGame;
+
 /**
  * @author Duanran 2019/1/30 0030
  */
@@ -66,10 +68,4 @@ public class GuessNumberHigherOrLower {
     }
   }
 
-  private class GuessGame {
-
-    int guess(int num) {
-      return 0;
-    }
-  }
 }
