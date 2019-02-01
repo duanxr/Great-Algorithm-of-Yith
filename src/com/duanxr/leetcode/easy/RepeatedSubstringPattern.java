@@ -1,8 +1,5 @@
 package com.duanxr.leetcode.easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Duanran 2019/1/28 0028
  */

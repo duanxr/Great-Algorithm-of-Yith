@@ -1,9 +1,7 @@
 package com.duanxr.leetcode.easy;
 
 import com.duanxr.leetcode.define.listNode.ListNode;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * @author Duanran 2019/1/30 0030

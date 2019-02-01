@@ -1,7 +1,6 @@
 package com.duanxr.leetcode.easy;
 
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * @author Duanran 2019/1/29 0029

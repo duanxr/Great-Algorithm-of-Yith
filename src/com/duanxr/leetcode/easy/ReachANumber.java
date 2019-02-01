@@ -1,7 +1,5 @@
 package com.duanxr.leetcode.easy;
 
-import java.util.Map;
-
 /**
  * @author Duanran 2019/1/30 0030
  */
