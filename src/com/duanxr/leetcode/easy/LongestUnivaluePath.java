@@ -1,7 +1,6 @@
 package com.duanxr.leetcode.easy;
 
 import com.duanxr.leetcode.define.treeNode.TreeNode;
-import java.util.LinkedList;
 
 /**
  * @author Duanran 2019/2/15 0015

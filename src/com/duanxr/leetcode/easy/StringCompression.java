@@ -1,7 +1,5 @@
 package com.duanxr.leetcode.easy;
 
-import java.util.LinkedList;
-
 /**
  * @author Duanran 2019/2/14 0014
  */

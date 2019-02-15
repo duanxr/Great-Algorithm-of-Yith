@@ -1,9 +1,6 @@
 package com.duanxr.leetcode.easy;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 /**
  * @author Duanran 2019/2/11 0011
