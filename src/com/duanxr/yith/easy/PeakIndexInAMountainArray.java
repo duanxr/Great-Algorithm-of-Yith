@@ -46,7 +46,6 @@ public class PeakIndexInAMountainArray {
    *  
    *
    * Follow up: Finding the O(n) is straightforward, could you find an O(log(n)) solution?
-   * 通过次数37,421提交次数53,151
    *
    * 符合下列属性的数组 arr 称为 山脉数组 ：
    * arr.length >= 3

@@ -37,7 +37,6 @@ public class CountAndSay {
    * Constraints:
    *
    * 1 <= n <= 30
-   * 通过次数169,418提交次数295,347
    *
    */
 
