@@ -1,6 +1,6 @@
 package com.duanxr.yith.middle;
 
-import com.duanxr.yith.define.naryTree.Node;
+import com.duanxr.yith.define.nAryTree.Node;
 import java.util.LinkedList;
 import java.util.List;
 

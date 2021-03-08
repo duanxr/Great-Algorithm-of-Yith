@@ -1,4 +1,4 @@
-package com.duanxr.yith.define.naryTree;
+package com.duanxr.yith.define.nAryTree;
 
 import java.util.List;
 
