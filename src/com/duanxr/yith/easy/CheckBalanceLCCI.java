@@ -56,6 +56,7 @@ public class CheckBalanceLCCI {
    * 返回 false 。
    *
    */
+
   class Solution {
 
     private boolean balanced = true;
