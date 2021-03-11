@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * @author 段然 2021/3/11
  */
-public interface ErChaShuDeZuiJinGongGongZuXianLcof {
+public class ErChaShuDeZuiJinGongGongZuXianLcof {
 
   /**
    * English description is not available for the problem.
