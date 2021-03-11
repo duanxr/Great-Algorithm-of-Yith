@@ -1,0 +1,44 @@
+package com.duanxr.yith.easy;
+
+/**
+ * @author 段然 2021/3/11
+ */
+public class LianXuZiShuZuDeZuiDaHeLcof {
+
+  /**
+   * English description is not available for the problem.
+   *
+   * 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+   *
+   * 要求时间复杂度为O(n)。
+   *
+   *  
+   *
+   * 示例1:
+   *
+   * 输入: nums = [-2,1,-3,4,-1,2,1,-5,4]
+   * 输出: 6
+   * 解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+   *  
+   *
+   * 提示：
+   *
+   * 1 <= arr.length <= 10^5
+   * -100 <= arr[i] <= 100
+   * 注意：本题与主站 53 题相同：https://leetcode-cn.com/problems/maximum-subarray/
+   *
+   */
+  class Solution {
+
+    public int maxSubArray(int[] nums) {
+      int max = Integer.MIN_VALUE;
+      int sum = 0;
+      for (int i = 0; i < nums.length; i++) {
+        int currentSum = nums[i] + sum;
+        max = Math.max(max, currentSum);
+        sum = currentSum < 0 ? 0 : currentSum;
+      }
+      return max;
+    }
+  }
+}
