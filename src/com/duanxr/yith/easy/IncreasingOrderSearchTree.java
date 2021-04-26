@@ -1,6 +1,8 @@
 package com.duanxr.yith.easy;
 
 import com.duanxr.yith.define.treeNode.TreeNode;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author 段然 2021/3/8
@@ -72,7 +74,37 @@ public class IncreasingOrderSearchTree {
    * 每个结点都有一个从 0 到 1000 范围内的唯一整数值。
    *
    */
+
   class Solution {
+
+    public TreeNode increasingBST(TreeNode root) {
+      if (root == null) {
+        return null;
+      }
+      List<TreeNode> list = new ArrayList<>();
+      increasing(root, list);
+      TreeNode last = null;
+      for (int i = list.size() - 1; i >= 0; i--) {
+        TreeNode node = list.get(i);
+        node.left = null;
+        node.right = last;
+        last = node;
+      }
+      return last;
+    }
+
+    private void increasing(TreeNode root, List<TreeNode> list) {
+      if (root == null) {
+        return;
+      }
+      increasing(root.left, list);
+      list.add(root);
+      increasing(root.right, list);
+    }
+  }
+
+
+  class Solution1 {
 
     public class TreeAppender {
 
