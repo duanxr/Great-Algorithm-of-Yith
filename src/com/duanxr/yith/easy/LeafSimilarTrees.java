@@ -1,6 +1,7 @@
 package com.duanxr.yith.easy;
 
 import com.duanxr.yith.define.treeNode.TreeNode;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -97,6 +98,28 @@ public class LeafSimilarTrees {
    *
    */
   class Solution {
+
+    public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+      List<Integer> leaf1 = getLeaf(root1, new ArrayList<>());
+      List<Integer> leaf2 = getLeaf(root2, new ArrayList<>());
+      return leaf1.equals(leaf2);
+    }
+
+    private List<Integer> getLeaf(TreeNode root, ArrayList<Integer> list) {
+      if (root == null) {
+        return list;
+      }
+      if (root.left == null && root.right == null) {
+        list.add(root.val);
+      }
+      getLeaf(root.left,list);
+      getLeaf(root.right,list);
+      return list;
+    }
+  }
+
+
+  class Solution1 {
 
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
       LinkedList<Integer> r1 = new LinkedList<>();
