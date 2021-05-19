@@ -1,4 +1,4 @@
-package com.duanxr.yith.easy;
+package com.duanxr.yith.midium;
 
 import com.duanxr.yith.define.treeNode.TreeNode;
 import java.util.ArrayList;
