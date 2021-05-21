@@ -45,7 +45,6 @@ public class DesignBrowserHistory {
    * 1 <= steps <= 100
    * homepage and url consist of  '.' or lower case English letters.
    * At most 5000 calls will be made to visit, back, and forward.
-   * 通过次数5,791提交次数9,477
    *
    * 你有一个只支持单个标签页的 浏览器 ，最开始你浏览的网页是 homepage ，你可以访问其他的网站 url ，也可以在浏览历史中后退 steps 步或前进 steps 步。
    *
