@@ -71,6 +71,47 @@ public class MaximumAveragePassRatio {
   class Solution {
 
     public double maxAverageRatio(int[][] classes, int extraStudents) {
+      PriorityQueue<double[]> maxQ = new PriorityQueue<>(Comparator.comparingDouble(o -> o[0]));
+      PriorityQueue<double[]> minQ = new PriorityQueue<>((o1, o2) -> Double.compare(o2[0], o1[0]));
+      double sum = 0D;
+      for (int[] aClass : classes) {
+        double[] doubles = new double[4];
+        doubles[2] = aClass[0];
+        doubles[3] = aClass[1];
+        toDouble(doubles);
+        if (maxQ.size() < extraStudents || maxQ.peek()[0] < doubles[0]) {
+          maxQ.offer(doubles);
+        } else {
+          sum += doubles[1];
+        }
+        if (maxQ.size() > extraStudents) {
+          sum += maxQ.poll()[1];
+        }
+      }
+      minQ.addAll(maxQ);
+      for (int i = 0; i < extraStudents; i++) {
+        double[] doubles = minQ.poll();
+        doubles[2]++;
+        doubles[3]++;
+        toDouble(doubles);
+        minQ.offer(doubles);
+      }
+      for (double[] doubles : minQ) {
+        sum += doubles[1];
+      }
+      return sum / classes.length;
+    }
+
+    private void toDouble(double[] doubles) {
+      doubles[1] = doubles[2] / doubles[3];
+      doubles[0] = (doubles[2] + 1D) / (doubles[3] + 1D) - doubles[1];
+    }
+  }
+
+
+  class Solution7 {
+
+    public double maxAverageRatio(int[][] classes, int extraStudents) {
       PriorityQueue<Pair<Double, Pair<Double, Double>>> minQ = new PriorityQueue<>(
           (o1, o2) -> o2.getKey().compareTo(o1.getKey()));
       PriorityQueue<Pair<Double, Pair<Double, Double>>> maxQ = new PriorityQueue<>(
