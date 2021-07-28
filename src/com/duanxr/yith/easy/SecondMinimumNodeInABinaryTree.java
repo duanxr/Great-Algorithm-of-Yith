@@ -66,7 +66,6 @@ public class SecondMinimumNodeInABinaryTree {
    * 1 <= Node.val <= 231 - 1
    * 对于树中每个节点 root.val == min(root.left.val, root.right.val)
    *
-   * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
    */
   class Solution {
 
