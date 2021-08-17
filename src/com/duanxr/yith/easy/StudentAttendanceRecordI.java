@@ -53,6 +53,31 @@ public class StudentAttendanceRecordI {
   class Solution {
 
     public boolean checkRecord(String s) {
+      char[] chars = s.toCharArray();
+      int lc = 0;
+      int ac = 0;
+      for (char c : chars) {
+        if (c == 'L') {
+          if (lc++ == 3) {
+            return false;
+          }
+        } else {
+          lc = 0;
+        }
+        if (c == 'A') {
+          if (ac++ == 2) {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+  }
+
+
+  class Solution1 {
+
+    public boolean checkRecord(String s) {
       int L = 0;
       boolean A = false;
       for (char c : s.toCharArray()) {
