@@ -2,7 +2,6 @@ package com.duanxr.yith.easy;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import javafx.util.Pair;
 
 /**
  * @author 段然 2021/3/16

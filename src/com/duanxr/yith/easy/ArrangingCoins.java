@@ -1,5 +1,7 @@
 package com.duanxr.yith.easy;
 
+import java.util.Arrays;
+
 /**
  * @author Duanran 2019/1/30 0030
  */
@@ -70,6 +72,36 @@ public class ArrangingCoins {
    * 因为第四行不完整，所以返回3.
    */
   class Solution {
+    public int arrangeCoins(int n) {
+      int low = 0;
+      int high = 65535;
+      while (low <= high) {
+        int mid = (low + high) >>> 1;
+        int midVal = (mid*(mid+1))>>>1;
+        if (midVal < n)
+          low = mid + 1;
+        else if (midVal > n)
+          high = mid - 1;
+        else
+          return mid;
+      }
+      return high;
+    }
+  }
+
+  class Solution1 {
+    public int arrangeCoins(int n) {
+      int c = 0;
+      int i = 1;
+      while (n >= i) {
+        n -= i++;
+        c++;
+      }
+      return c;
+    }
+  }
+
+  class Solution2 {
 
     public int arrangeCoins(int n) {
       return (int) ((-1 + Math.sqrt(8 * (long) n + 1)) / 2);
