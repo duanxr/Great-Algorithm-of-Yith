@@ -54,6 +54,18 @@ public class NumberComplement {
    *
    */
   class Solution {
+    public int findComplement(int num) {
+      int mask = ~0;
+      int tn = num;
+      while (tn!=0)
+      {
+        tn=tn>>>1;
+        mask = mask<<1;
+      }
+      return ~(num|mask);
+    }
+  }
+  class Solution1 {
 
     public int findComplement(int num) {
       char[] c = Integer.toBinaryString(num).toCharArray();
